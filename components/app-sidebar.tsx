@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useRef } from "react";
 import { PaintBucket } from "lucide-react";
+import AppSidebarList from "./app-sidebar-list";
 
 export default function AppSidebar() {
   const { isOpen, setStatus } = useSidebar();
@@ -57,6 +58,10 @@ export default function AppSidebar() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="">
+        <AppSidebarList />
       </div>
     </div>
   );

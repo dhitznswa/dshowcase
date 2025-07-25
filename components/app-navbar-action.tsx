@@ -30,9 +30,9 @@ export function ProfileMenu({ session }: { session: Session | null }) {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56" align="end" sideOffset={10}>
           <DropdownMenuLabel className="-space-y-1">
-            <h3 className="font-medium">{session?.user.email}</h3>
+            <h3 className="font-medium">@{session?.user.username}</h3>
             <span className="text-xs text-muted-foreground">
-              Role : {session?.user.role}
+              {session?.user.email}
             </span>
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
