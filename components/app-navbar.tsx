@@ -1,16 +1,15 @@
-"use client";
-
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { useSidebar } from "@/contexts/sidebarContext";
+import { ProfileMenu, SidebarToggle } from "@/components/app-navbar-action";
+import { auth } from "@/auth";
 
-export default function AppNavbar() {
-  const { toggleSidebar } = useSidebar();
+export default async function AppNavbar() {
+  const session = await auth();
   return (
     <div className="w-full p-5 h-20 bg-background flex items-center justify-between">
       <div>General / Dashboard</div>
-      <div>
-        <Button onClick={toggleSidebar}>Open</Button>
+      <div className="flex items-center gap-3">
+        <ProfileMenu session={session} />
+        <SidebarToggle />
       </div>
     </div>
   );

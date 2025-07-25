@@ -1,6 +1,9 @@
-import { signIn } from "@/auth";
-import { Button } from "@/components/ui/button";
+import { signIn, signOut } from "@/auth";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { VariantProps } from "class-variance-authority";
+import { LogOut } from "lucide-react";
 import Image from "next/image";
+import React from "react";
 
 export const GitHubLoginButton = () => {
   return (

@@ -1,7 +1,4 @@
-import {
-  GitHubLoginButton,
-  GoogleLoginButton,
-} from "@/components/button-login";
+import { GitHubLoginButton, GoogleLoginButton } from "@/components/auth-button";
 import { Card, CardContent } from "@/components/ui/card";
 import React from "react";
 
