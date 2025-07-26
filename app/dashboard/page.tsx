@@ -1,10 +1,9 @@
-import { auth } from "@/auth";
 import React from "react";
 
-export default async function dashboard() {
-  const session = await auth();
-
-  console.log(session);
-
-  return <div>Welcome {session?.user?.name}</div>;
+export default function dashboard() {
+  return (
+    <div>
+      <h1>Selamat datang</h1>
+    </div>
+  );
 }

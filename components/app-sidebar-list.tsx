@@ -51,7 +51,7 @@ export default function AppSidebarList() {
       </Button>
       <div className="mt-6">
         <AppSidebarListItem category="General" items={general_items} />
-        {session?.user.role === "Admin" ? (
+        {session?.user.role === "admin" ? (
           <AppSidebarListItem category="Area Admin" items={admin_items} />
         ) : null}
         <AppSidebarListItem category="Produk" items={produk_items} />

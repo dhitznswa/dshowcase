@@ -16,7 +16,7 @@ export default function DashboardLayout({
           <AppSidebar />
           <main className="w-full lg:w-5/6 min-h-screen ml-auto bg-secondary">
             <AppNavbar />
-            <div className="py-10 px-16">{children}</div>
+            <div className="py-10 px-4 lg:px-16">{children}</div>
           </main>
         </div>
       </SidebarContextProvider>
